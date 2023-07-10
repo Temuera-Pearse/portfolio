@@ -9,7 +9,7 @@ import {
 import { QueryClient, QueryClientProvider } from 'react-query'
 ;<Route path="/" element={<App />}></Route>
 
-import App from './components/App'
+import App from './components/App/App'
 
 export const routes = createRoutesFromElements(
   <Route>

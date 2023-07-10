@@ -3,7 +3,7 @@ import { screen, render } from '@testing-library/react'
 import {} from 'ts-jest'
 
 import App from './App'
-import store from '../store'
+import store from '../../store'
 import { fetchFruits } from '../actions'
 
 jest.mock('../actions')
@@ -15,7 +15,7 @@ test('page header includes fruit', () => {
   render(
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   )
   const heading = screen.getByRole('heading')
   expect(heading.innerHTML).toMatch(/Fruit/)
@@ -29,7 +29,7 @@ test('renders an <li> for each fruit', () => {
   render(
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   )
   const li = screen.getAllByRole('listitem')
   expect(li).toHaveLength(3)
@@ -39,7 +39,7 @@ test('dispatches fetchFruits action', () => {
   render(
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   )
   expect(fetchFruits).toHaveBeenCalled()
 })
