@@ -10,10 +10,13 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 ;<Route path="/" element={<App />}></Route>
 
 import App from './components/App/App'
+import MainPage from './pages/mainPage'
 
 export const routes = createRoutesFromElements(
   <Route>
-    <Route path="/" element={<App />}></Route>
+    <Route path="/" element={<App />}>
+      <Route path="/Mainpage" element={<MainPage />} />
+    </Route>
   </Route>,
 )
 
