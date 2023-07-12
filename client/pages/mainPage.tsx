@@ -1,4 +1,4 @@
-import Header from '../components/App/Header/header'
+import Header from '../components/Header/header'
 
 function MainPage() {
   return (
