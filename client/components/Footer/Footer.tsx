@@ -1,11 +1,7 @@
 import DownloadButton from '../DownloadButton/DownloadButton'
 
 function Footer() {
-  return (
-    <div>
-      <DownloadButton />
-    </div>
-  )
+  return <div></div>
 }
 
 export default Footer
