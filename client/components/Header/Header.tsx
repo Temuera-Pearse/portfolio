@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <DownloadButton />
-      <p> im the header </p>
+      <p className="text-white"> im the header </p>
     </div>
   )
 }

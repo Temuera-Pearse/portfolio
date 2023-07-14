@@ -9,7 +9,12 @@ function DownloadButton() {
 
   return (
     <div>
-      <button onClick={handleDownload}>Download my CV</button>
+      <button
+        className=" text-white items-center justify-center"
+        onClick={handleDownload}
+      >
+        Download my CV
+      </button>
     </div>
   )
 }
