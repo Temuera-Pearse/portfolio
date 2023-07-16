@@ -34,13 +34,30 @@ function MainPage() {
           showBackgroundVideo ? 'opacity-0' : 'opacity-100'
         }
   `}
-  {showBackgroundVideo && (
-    <div className="bg-video-container">
-  )}
+        {...(showBackgroundVideo && (
+          <div className="bg-video-container">
+            {
+              <video
+                className="absolute inset-0 w-full h-full object-cover opacity-80"
+                autoPlay
+                muted
+                loop
+              >
+                <source
+                  src="landingBackground/IMG_1419.mp4"
+                  type="video/mp4"
+                ></source>
+              </video>
+            }
+          </div>
+        ))}
       />
-      <div className="text-center">
+      <div
+        className={`text-white text-center transition-opacity duration-1000 delay-1000 ${
+          showBackgroundVideo ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
         <Title />
-
         <Header />
         <Footer />
       </div>
