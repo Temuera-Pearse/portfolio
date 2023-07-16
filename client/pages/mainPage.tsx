@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Title from '../components/Title/Title'
+import Paragraph_1 from '../components/Paragraphs/Paragraph_1'
 function MainPage() {
   const [scrollPosition, setScrollPositiion] = useState(0)
   const [showBackgroundVideo, setShowBackgroundVideo] = useState(false)
@@ -53,14 +54,21 @@ function MainPage() {
         ))}
       />
       <div
-        className={`text-white text-center transition-opacity duration-1000 delay-1000 ${
+        className={` transition-opacity duration-1000 delay-1000 ${
           showBackgroundVideo ? 'opacity-100' : 'opacity-0'
         }`}
-      >
+      ></div>
+
+      <div className="flex justify-center">
         <Title />
-        <Header />
-        <Footer />
       </div>
+      <div className="flex justify-center">
+        <Header />
+      </div>
+      <div className="flex justify-center">
+        <Paragraph_1 />
+      </div>
+      <Footer />
     </div>
   )
 }
