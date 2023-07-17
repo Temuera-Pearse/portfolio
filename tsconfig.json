@@ -22,5 +22,10 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */,
     "noEmit": true
   },
-  "include": ["server/**/*", "client/**/*"]
+  "include": [
+    "server/**/*",
+    "client/**/*",
+    "stories/assets/SymbolBar.stories.tsx",
+    "stories/SymbolBar.stories.tsx"
+  ]
 }

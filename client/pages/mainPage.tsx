@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Title from '../components/Title/Title'
 import Paragraph_1 from '../components/Paragraphs/Paragraph_1'
+import SymbolBar from '../components/SymbolBar/SymbolBar'
 function MainPage() {
   const [scrollPosition, setScrollPositiion] = useState(0)
   const [showBackgroundVideo, setShowBackgroundVideo] = useState(false)
@@ -61,6 +62,9 @@ function MainPage() {
 
       <div className="flex justify-center">
         <Title />
+      </div>
+      <div className="flex justify-center">
+        <SymbolBar />
       </div>
       <div className="flex justify-center">
         <Header />
