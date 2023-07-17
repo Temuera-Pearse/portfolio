@@ -3,15 +3,14 @@ import SymbolGallery from './symbolGallery'
 
 const SymbolBar: React.FC = () => {
   const imageUrls = [
-    'public/symbols/htmlLogo.png',
-    'public/symbols/cssLogo.png',
-    'public/symbols/javascriptLogo.png',
+    'public/symbols/kisspng-website-development-javascript-html5-css3-cascadin-appload-comprehensive-software-and-mobile-app-de-5b7b834e216377.0246733915348211981368.png',
     'public/symbols/nodeLogo.png',
     'public/symbols/reactLogo.png',
     'public/symbols/jestLogo.png',
     'public/symbols/reactQueryLogo.png',
     'public/symbols/typescript.png',
     'public/symbols/reduxLogo.png',
+    'public/symbols/insomniaLogo.png',
   ]
 
   return (
