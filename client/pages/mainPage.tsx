@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import Title from '../components/Title/Title'
 import Paragraph_1 from '../components/Paragraphs/Paragraph_1'
 import SymbolBar from '../components/SymbolBar/SymbolBar'
+import ProjectBoxContent from '../components/ProjectBox/ProjectBoxContent'
 function MainPage() {
   const [scrollPosition, setScrollPositiion] = useState(0)
   const [showBackgroundVideo, setShowBackgroundVideo] = useState(false)
@@ -71,6 +72,9 @@ function MainPage() {
       </div>
       <div className="flex justify-center">
         <Paragraph_1 />
+      </div>
+      <div>
+        <ProjectBoxContent />
       </div>
       <Footer />
     </div>
