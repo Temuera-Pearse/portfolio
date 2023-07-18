@@ -10,7 +10,7 @@ function DownloadButton() {
   return (
     <div>
       <button
-        className=" text-white items-center justify-center"
+        className=" text-white text-3xl items-center justify-center"
         onClick={handleDownload}
       >
         Download my CV
