@@ -29,7 +29,7 @@ function MainPage() {
   }, [scrollPosition])
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <img
         src="public/pics/_20220617nib_milkyway.jpg"
         alt="universe"
@@ -67,12 +67,15 @@ function MainPage() {
       <div className="flex justify-center">
         <SymbolBar />
       </div>
+      <br></br>
       <div className="flex justify-center">
         <Header />
       </div>
+      <br></br>
       <div className="flex justify-center">
         <Paragraph_1 />
       </div>
+      <br></br>
       <div>
         <ProjectBoxContent />
       </div>

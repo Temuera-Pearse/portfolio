@@ -8,8 +8,12 @@ type ProjectBoxProps = {
 
 function ProjectBox({ imageSrc, description, stacks }: ProjectBoxProps) {
   return (
-    <div className="max-w-lg mx-auto shadow-lg rounded-lg overflow-hidden">
-      <img className="w-full" src={imageSrc} alt="Project" />
+    <div className="p-5 bg-slate-600 max-w-xxlg mx-auto shadow-lg rounded-lg overflow-hidden">
+      <img
+        className="mx-auto w-120 h-3/5 object-cover rounded-lg"
+        src={imageSrc}
+        alt="Project"
+      />
       <div className="p-4">
         <p className="text-white text-base">{description}</p>
         <div className="flex mt-4">
