@@ -343,7 +343,7 @@ function Breaks() {
       <br />
       <br />
       <br />
-      <h1 className="text-white text-center size-xl">HOLD ON</h1>
+      <h1 className="text-white text-center text-4xl">HOLD ON</h1>
       <br />
       <br />
       <br />

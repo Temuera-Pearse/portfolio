@@ -14,6 +14,7 @@ function MainPage() {
   const { scrollYProgress, scrollXProgress } = useScroll()
   const translateY = useTransform(scrollYProgress, [0, 1], ['0%', '-50%'])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0])
+  const scaleSpeed = 2
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,28 +59,34 @@ function MainPage() {
         </motion.div>
         <Breaks />
 
-        <div className="flex justify-center">
-          <Title />
-        </div>
-        <div className="flex justify-center mx-10 my-10">
-          <SymbolBar />
-        </div>
+        <div className="flex-wrap">
+          <div className="flex justify-center">
+            <Title />
+          </div>
+          <div className="flex justify-center">
+            <SymbolBar />
+          </div>
 
-        <div className="flex justify-center mx-10 my-10">
-          <Header />
-        </div>
+          <div className="flex justify-center mx-10 my-10">
+            <Header />
+          </div>
+          <div className="flex flex-wrap mx-10 my-10">
+            <div className="m-5 flex-1">
+              <ProfilePic />
+            </div>
+            <div className="m-5 flex-1">
+              <Paragraph_1 />
+            </div>
+          </div>
 
-        <div className="flex mx-10 my-10">
-          <ProfilePic />
-          <Paragraph_1 />
-        </div>
-        <br />
-        <div className="mx-10 my-10">
-          <ProjectBoxContent />
-        </div>
-        <br />
-        <div className="mx-10 my-10">
-          <Footer />
+          <br />
+          <div className=" mx-10 my-10">
+            <ProjectBoxContent />
+          </div>
+          <br />
+          <div className="mx-10 my-10">
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
