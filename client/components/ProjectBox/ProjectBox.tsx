@@ -10,7 +10,7 @@ function ProjectBox({ imageSrc, description, stacks }: ProjectBoxProps) {
   return (
     <div className="p-5 bg-slate-600 max-w-xxlg mx-auto shadow-lg rounded-lg overflow-hidden">
       <img
-        className="mx-auto w-120 h-3/5 object-cover rounded-lg"
+        className="mx-auto w-2/3 h-2/3 object-cover rounded-lg"
         src={imageSrc}
         alt="Project"
       />

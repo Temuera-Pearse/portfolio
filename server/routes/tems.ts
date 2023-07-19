@@ -1,12 +1,12 @@
 import { Router } from 'express'
 
-import * as db from '../db/fruits'
+import * as db from '../db/tems'
 
 const router = Router()
 
 router.get('/', async (req, res) => {
   try {
-    const fruits = await db.getAllFruits()
+    const fruits = await db.getAllTems()
 
     res.json({ fruits: fruits.map((fruit) => fruit.name) })
   } catch (error) {
