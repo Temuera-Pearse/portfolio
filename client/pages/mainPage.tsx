@@ -52,7 +52,7 @@ function MainPage() {
           <img
             data-min="160"
             data-max="1000"
-            src="public/pics/_20220617nib_milkyway.jpg"
+            src="/pics/_20220617nib_milkyway.jpg"
             alt="space"
             className="w-screen h-screen object-cover transition-transform duration-500 ease-in-out"
           />
