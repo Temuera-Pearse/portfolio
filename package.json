@@ -16,53 +16,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "eslintConfig": {
-    "extends": [
-      "@",
-      "d",
-      "e",
-      "v",
-      "a",
-      "c",
-      "a",
-      "d",
-      "e",
-      "m",
-      "y",
-      "/",
-      "e",
-      "s",
-      "l",
-      "i",
-      "n",
-      "t",
-      "-",
-      "c",
-      "o",
-      "n",
-      "f",
-      "i",
-      "g",
-      "/",
-      "r",
-      "e",
-      "a",
-      "c",
-      "t",
-      "plugin:storybook/recommended"
-    ],
-    "ignorePatterns": [
-      "bundle.js"
-    ]
-  },
-  "dependencies": {
-    "express": "^4.17.2",
-    "framer-motion": "^10.12.22",
-    "knex": "^2.3.0",
-    "sqlite3": "^5.1.2",
-    "superagent": "7.1.1"
-  },
   "devDependencies": {
+    "framer-motion": "^10.12.22",
     "@devacademy/eslint-config": "^1.8.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@storybook/addon-essentials": "^7.0.27",
@@ -73,7 +28,6 @@
     "@storybook/react-vite": "^7.0.27",
     "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/react": "^13.4",
-    "@types/express": "^4.17.14",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^4.0.0",
