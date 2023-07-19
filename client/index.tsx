@@ -7,7 +7,6 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
-;<Route path="/" element={<App />}></Route>
 
 import App from './components/App/App'
 import MainPage from './pages/MainPage'
