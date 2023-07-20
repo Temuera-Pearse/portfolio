@@ -1,3 +1,5 @@
+// src/scripts/index.js
+
 import { createRoot } from 'react-dom/client'
 import { Suspense, lazy, useEffect } from 'react'
 import {
@@ -27,11 +29,13 @@ function AppProvider() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const queryClient = new QueryClient()
-  createRoot(document.getElementById('app') as HTMLElement).render(
-    <QueryClientProvider client={queryClient}>
-      <Suspense>
-        <AppProvider />
-      </Suspense>
-    </QueryClientProvider>,
+  createRoot(
+    document.getElementById('app')?.render(
+      <QueryClientProvider client={queryClient}>
+        <Suspense>
+          <AppProvider />
+        </Suspense>
+      </QueryClientProvider>,
+    ),
   )
 })
