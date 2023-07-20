@@ -9,7 +9,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d client",
     "test": "vitest",
     "dev": "run-p dev:client dev:css",
     "dev:client": "vite",
