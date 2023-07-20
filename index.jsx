@@ -10,9 +10,9 @@ import {
 } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
-import App from './components/App/App'
-import MainPage from './pages/MainPage'
-import LandingPage from './pages/landingPage'
+import App from './client/components/App/App'
+import MainPage from './client/pages/MainPage'
+import LandingPage from './client/pages/landingPage'
 
 export const routes = createRoutesFromElements(
   <Route>

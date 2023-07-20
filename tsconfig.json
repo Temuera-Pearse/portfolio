@@ -26,6 +26,7 @@
     "server/**/*",
     "client/**/*",
     "stories/assets/SymbolBar.stories.tsx",
-    "stories/SymbolBar.stories.tsx"
+    "stories/SymbolBar.stories.tsx",
+    "index.jsx"
   ]
 }
