@@ -66,5 +66,9 @@
     "semi": false,
     "singleQuote": true
   },
-  "browserslist": "> 2%, not dead"
+  "browserslist": "> 2%, not dead",
+  "dependencies": {
+    "knex": "^2.5.1",
+    "sqlite3": "^5.1.6"
+  }
 }
