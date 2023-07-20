@@ -9,4 +9,12 @@ export default defineConfig({
       '/api': 'http://localhost:3000',
     },
   },
+  define: {
+    'process.env': {},
+    'import.meta.env': {},
+    __VUE_OPTIONS_API__: true,
+    __VUE_PROD_DEVTOOLS__: false,
+    // Add the custom MIME type for JavaScript module files
+    'process.env': { VITE_CUSTOM_MIME_JS_MODULE: 'application/javascript' },
+  },
 })
